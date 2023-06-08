@@ -1,8 +1,8 @@
 #!/bin/bash
 git init -qqq
-git remote add origin https://github.com/bid-d/docker-magento
+git remote add origin https://github.com/bid-d/mageno-qarbi
 git fetch origin -qqq
-git checkout origin/omnyfy -- compose
+git checkout origin/master -- compose
 mv compose/* ./
 mv compose/.gitignore ./
 mv compose/.vscode ./

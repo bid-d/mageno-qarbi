@@ -241,10 +241,10 @@ bin/restart
 #     bin/magento config:set --lock-env bidding/alayacare/sandbox_api_key $ALAYACARE_SANBOX_PASS
 # fi
 
-echo -e "\n${BGREEN}Setting up Stripe ...${NC}"
-bin/magento app:config:dump
-bin/magento config:set --lock-env payment/stripe_payments_basic/stripe_test_pk $STRIPE_PUBLISH_KEY
-bin/magento config:set --lock-env payment/stripe_payments_basic/stripe_test_sk $STRIPE_SECRET_KEY
-bin/magento c:f
+# echo -e "\n${BGREEN}Setting up Stripe ...${NC}"
+# bin/magento app:config:dump
+# bin/magento config:set --lock-env payment/stripe_payments_basic/stripe_test_pk $STRIPE_PUBLISH_KEY
+# bin/magento config:set --lock-env payment/stripe_payments_basic/stripe_test_sk $STRIPE_SECRET_KEY
+# bin/magento c:f
 
 echo -e "\n${BGREEN}${CHECKMARK} Finish setting up Marketplace version $version, please visit your site: https://$DOMAIN/${NC}"
