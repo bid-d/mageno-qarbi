@@ -82,15 +82,15 @@ done
 
 sleep 1
 
-echo -e "${BGREEN}Do you want to enter your own stripe api key? Otherwise we will use default value from Jack's account${NC}"
-select stripe in "Yes" "No"; do
-    case $stripe in
-        Yes ) 
-        read -p "Test publishable API key: " STRIPE_PUBLISH_KEY
-        read -p "Test secret API key: " STRIPE_SECRET_KEY; break;;
-        No ) break;;
-    esac
-done
+# echo -e "${BGREEN}Do you want to enter your own stripe api key? Otherwise we will use default value from Jack's account${NC}"
+# select stripe in "Yes" "No"; do
+#     case $stripe in
+#         Yes ) 
+#         read -p "Test publishable API key: " STRIPE_PUBLISH_KEY
+#         read -p "Test secret API key: " STRIPE_SECRET_KEY; break;;
+#         No ) break;;
+#     esac
+# done
 
 # Remove other running docker service
 echo -e "${BGREEN}Removing other running docker services ...${NC}"
